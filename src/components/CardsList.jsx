@@ -1,4 +1,6 @@
 import Card from "./Card.jsx"
+import CardA from '@mui/material/Card';
+import Container from '@mui/material/Container';
 import Data from "../data.json"
 import "../App.css"
 let now = new Date();
@@ -28,11 +30,11 @@ for(let i=0;i<Data.length;i++){
 function CardsList(){
     return (
         <>
-        <div className='cards-container'>
+        <Container maxWidth='lm' className='cards-container'>
         {Data.map((item,index)=>(
-            <Card key={index} {...item} index = {index}></Card>
+            <CardA><Card key={index} {...item} index = {index}></Card></CardA>
         ))}
-    </div>
+    </Container>
         </>
     )
 }

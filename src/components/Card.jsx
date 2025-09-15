@@ -1,4 +1,5 @@
 import "../App.css"
+import Button from "@mui/material/Button";
 import {Link} from "react-router-dom"
 function Card({profile,title,price,username,location,description,status,isOnline,index}){
 return (
@@ -14,8 +15,8 @@ return (
             <h3 className="card-location"><i className="fas fa-map-marker-alt"></i>{location}</h3>
             <h3 className="card-description">{description}</h3>
             <div className="btns">
-              <button className="btn-outline">VIEW CV</button>
-              <button className="btn-filled">MAKE OFFER</button>
+              <Button  variant="outlined" className="btn-outline">VIEW CV</Button>
+              <Button variant="contained" className="btn-filled">MAKE OFFER</Button>
             </div>
             <p className="card-status">
               {isOnline?(<>

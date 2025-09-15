@@ -9,25 +9,6 @@ body {
     background-color: black;
 }
 
-.cards-container {
-    width: 100%;
-    margin-left: 15px;
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    margin-bottom: 40px;
-    justify-content: space-evenly;
-}
-
-.card {
-    height: auto;
-    width: 350px;
-    background-color: white;
-    text-align: center;
-    border: 0px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
 
 .card-header {
     display: flex;
@@ -70,24 +51,6 @@ body {
     gap: 20px;
 }
 
-.btn-outline {
-    padding: 5px 0px 5px 0px;
-    width: 200px;
-    border: 2px solid rgb(12, 209, 235);
-    color: rgb(12, 209, 235);
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn-filled {
-    padding: 5px 0px 5px 0px;
-    width: 200px;
-    border: 0px;
-    color: white;
-    background-color: #3398db;
-    border-radius: 5px;
-    font-weight: bold;
-}
 
 img {
     border: 0px;
